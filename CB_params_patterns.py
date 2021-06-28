@@ -2,6 +2,8 @@ import numpy as np
 import pickle
 from multiprocessing import Pool,cpu_count
 import json
+import pathlib
+current_path=str(pathlib.Path(__file__).parent.resolve())+"/"
 
 ### Express Talons Codebooks:
 # in a similar format as in https://github.com/wigig-tools/wigig-module
@@ -17,8 +19,7 @@ global_sed=.16#.15#0.01#
 reload_AF_File=False
 allowed_multi_pool=False
 
-
-AF_file="array_factor/AF_spherical_interp.csv"
+AF_file=current_path+"array_factor/AF_spherical_interp.csv"
 
 ### A rapid print
 def show_AF():
