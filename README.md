@@ -1,4 +1,14 @@
-# Talon AD7200 Sector Patterns
+# Forked and branched
+This is a fork of Talon AD7200 Sector Patterns (https://github.com/seemoo-lab/talon-sector-patterns).
+Based on the array factor/pattern measurements provided as a CSV file, I express codebooks and patterns in a json/python way.
+I translate codebook parameters expressed as in (https://github.com/Joanguitar/Adaptive-Codebook-Optimization).
+I also export data as parametric codebooks txt files for ns3 (https://github.com/wigig-tools/wigig-module).
+
+I add the following files:
+ * *smooth_the_csv.py*: Make a nicer csv file (adding missing measurements, softer lobe edges)
+ * *CB_params_patterns.py*: Codebook expression engine
+
+# (original README) Talon AD7200 Sector Patterns
 We measured individual sector patterns for the predefined sectors, individual antenna elements and custom beam patterns of a Talon AD7200 router inside an anechoic chamber. The measured patterns are provided here for validation and integration in other projects. Please note that these results might be device dependent and differ on other hardware components. We cannot grantee that different devices behave similar as sector patterns depend on hardware variations and firmware versions. 
 
 ## Talon Tools
