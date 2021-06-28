@@ -224,7 +224,7 @@ if not (__name__ == '__main__'):
         steeringVector=pickle.load(open('steeringVector.dat','rb'))
     except:
         reload_AF_File=True
-        update_SV()
+        update_SV(complete_packmen=True)
 
 
 ### Given a Talon sector expressed with etype dtypes, return a single amplitude value
